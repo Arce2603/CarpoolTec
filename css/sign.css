@@ -2,8 +2,7 @@ h1{
     padding-top:50px;
 }
 
-#plus{
-    
+#plusContainer{
     display:flex;
     align-self:flex-end;
 }
