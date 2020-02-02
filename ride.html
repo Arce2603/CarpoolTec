@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CarpoolTec</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="CSS/ride.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <a href="#" class="display-4 logo"><img class="carImg" src="./img/car.png" />CarpoolTEC</a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./profile.html">Profile </a></li>
+                    <li><a href="./myRide.html">My rides</a></li>
+                    <li><a href="./ride.html">Ride</a></li>
+                    <li><a href="./share.html">Share</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <h1 class="text-center">Ride</h1>
+        <section>
+            <h2>Looking for a ride?</h2>
+            <div class="sel">
+                <label>
+                    From:
+                    <select name="address">
+                        <option value="default">Main address</option>
+                        <option value="address2">ITESM</option>
+                        <option value="address2">address 2</option>
+                    </select>
+                </label>
+                <label>
+                    to
+                    <select name="address">
+                        <option value="default">ITESM</option>
+                        <option value="address2">address 2</option>
+                    </select>
+                </label>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-action">
+                    <div class="media">
+                        <div class="userImg">
+                            <img src="./img/user.png" class="thmbnl" alt="profile-picture">
+                        </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="userName">Nombre del usuario</div>
+                                    <div>Spots left:<span class="spots"> 3 </span></div>
+                                    <div>Date: <span class="date"> DD/MM/AAA </span></div>
+                                    <div>Departure time: <span class="time"> HH:MM </span></div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="join">
+                                        <button class="btn btn-success joinBtn">JOIN</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.logo,a {
+    color: ghostwhite;
+}
+
+.carImg {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+label{
+    margin-bottom:15px;
+}
+
+form{
+    margin: 0 55px;
+}
+
+.form {
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    padding: 0 15px;
+}

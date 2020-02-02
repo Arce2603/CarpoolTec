@@ -1,0 +1,48 @@
+.userName {
+    font-weight:bold;
+    font-size:18px;
+}
+.ride_share {
+    font-weight: bold;
+    font-size:16px;
+}
+
+.date, .time {
+    font-style: italic;
+    font-size: 16px;
+}
+.departing, .arrival {
+    font-size: 16px;
+}
+
+.thmbnl{
+    max-width:50px;
+    max-height:50px;
+}
+
+.btn {
+    width: 40px;
+    height: 35px;
+    margin:0 5px;
+}
+
+.buttons{
+    padding-top:10px;
+    display: flex;
+        justify-content: flex-end;
+}
+
+h2{
+    padding-left:10px;
+}
+
+.logo , a{
+    color: ghostwhite;
+}
+section {
+    padding: 0 15px;
+}
+.carImg {
+    max-width: 50px;
+    max-height: 50px;
+}

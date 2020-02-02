@@ -1,0 +1,38 @@
+.logo , a{
+    color: ghostwhite;
+}
+.carImg {
+    max-width: 50px;
+    max-height: 50px;
+}
+.date, .time, .spots {
+    font-style: italic;
+    font-size: 16px;
+}
+.userName {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.thmbnl {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.join {
+    display: flex;
+    justify-content: flex-end;
+    margin-right:15px;
+}
+
+.joinBtn{
+    align-self:center;
+    padding: 10px 20px;
+}
+
+section{
+    padding:0 15px;
+}
+.sel{
+    padding: 10px 0;
+}
