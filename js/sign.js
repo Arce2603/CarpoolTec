@@ -11,7 +11,7 @@ let extraAdd = document.getElementById('plus');
 let adrGroup = document.getElementsByClassName('adrGroup');
 let count = 0;
 let car = false;
-let addresses = [];
+let addresses = ["Tecnologico de Monterrey"];
 
 let User = {};
 

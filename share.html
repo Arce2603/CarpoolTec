@@ -34,7 +34,7 @@
         <h1 class="text-center">Share</h1>
         <section>
             <h2>Want to share your car?</h2>
-            <form>
+            <form id="formShare">
                 <fieldset>
                     <legend>Fill out the form</legend>
                     <div class="form">
@@ -55,30 +55,30 @@
                         <div class="row">
                             <label class="col-sm-2">
                                 From:
-                                <select name="from">
-                                    <option value="default">Main address</option>
-                                    <option value="address2">ITESM</option>
-                                    <option value="address2">address 2</option>
+<!--Modificar los SELECTS para que tengan como opciones las address que registro el usuario-->
+                                <select name="from" id="from">
+                                    <option value="0">ITESM</option>
+                                    <option value="1">Main address</option>
                                 </select>
                             </label>
                             <label class="col-sm-2">
                                 to
-                                <select name="to">
-                                    <option value="default">ITESM</option>
-                                    <option value="address2">address 2</option>
+                                <select id="to" name="to">
+                                    <option value="0">ITESM</option>
+                                    <option value="1">Main address</option>
                                 </select>
                             </label>
                         </div>
                         <div class="row">
                             <label class="col-sm-4">
                                 Number of free spots:
-                                <input type="number" min="1" max="10" />
+                                <input type="number" id="seats" min="1" max="10" />
                             </label>
                         </div>
                         <div class="row">
                             <label class="col-sm-4">
                                 Radius from address:
-                                <input type="number" min="1" />
+                                <input type="number" id="radius" min="1" />
                             </label>
                         </div>
                         <div class="row">
