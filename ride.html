@@ -37,21 +37,22 @@
             <div class="sel">
                 <label>
                     From:
-                    <select name="address">
-                        <option value="default">Main address</option>
-                        <option value="address2">ITESM</option>
-                        <option value="address2">address 2</option>
+                    <select name="from" id="from">
+                        <option value="0">ITESM</option>
+                        <option value="1">Main address</option>
+                        <option value="2">Address 2</option>
                     </select>
                 </label>
                 <label>
                     to
-                    <select name="address">
-                        <option value="default">ITESM</option>
-                        <option value="address2">address 2</option>
+                    <select name="to" id="to">
+                        <option value="0">ITESM</option>
+                        <option value="1">Main address</option>
+                        <option value="2">Address 2</option>
                     </select>
                 </label>
             </div>
-            <ul class="list-group">
+            <ul class="list-group" id="list">
                 <li class="list-group-item list-group-item-action">
                     <div class="media">
                         <div class="userImg">
@@ -71,12 +72,12 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </li>
             </ul>
         </section>
     </main>
+    <script type="text/javascript" src="./js/ride.js"></script>
 </body>
 </html>

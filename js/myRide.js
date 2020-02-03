@@ -16,6 +16,8 @@
  */
 let html_info = '';
 let listGroup = document.getElementsByClassName('pending');
+
+//Previamente hacer un GET de de todos los ID's del arreglo de 
 function addRides(user) {
     for (let i = 0; i < user.rides.length; i++) {
         extraInfo(user.rides[i].riders);
@@ -36,8 +38,8 @@ function addRides(user) {
                                         </div>
                                         <div class="col-xs-6">
                                             <div class="buttons">
-                                                <button class="btn btn-success"><i class="fas fa-edit"></i></button>
-                                                <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                                <button class="btn btn-success" id="edBtn${i}"><i class="fas fa-edit"></i></button>
+                                                <button class="btn btn-danger" id="delBtn${i}"><i class="fas fa-trash-alt"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -75,6 +77,16 @@ function extraInfo(riders) {
     }
 }
 
+function watchButtons(user) {
+    let edit = document.getElementsByClassName('btn-success');
+    let del = document.getElementsByClassName('btn-danger');
+    edit[0].addEventListener('click', e => {
+        console.log(e.target.parentElement.parentElement); console.log(e.target.id);
+        let num = e.target.id;
+    });
+    del[0].addEventListener('click', e => { console.log('d'); console.log(e.target.id); });
+
+}
 
 let ride = [{
     status: "sharing", //si el usuario es el dueño del carro 'sharing' si no 'riding'
@@ -108,4 +120,11 @@ let User = {
     rides: ride
 }
 
-addRides(User);
+function init() {
+    //Hacer un GET del obeto user
+    addRides(User);
+    watchButtons(User);
+}
+
+init();
+

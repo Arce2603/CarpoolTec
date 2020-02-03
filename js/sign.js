@@ -79,7 +79,7 @@ function sendObject() {
         carColor: car ? carColor.value:undefined,
         seats: car? seats.value:undefined,
     }
-    console.log(User);
+    console.log(User); //Hacer un POST a User collection
 }
 
 function init() {
