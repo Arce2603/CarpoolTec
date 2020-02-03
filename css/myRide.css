@@ -2,7 +2,7 @@
     font-weight:bold;
     font-size:18px;
 }
-.ride_share {
+.ride_share, .bold {
     font-weight: bold;
     font-size:16px;
 }
@@ -45,4 +45,8 @@ section {
 .carImg {
     max-width: 50px;
     max-height: 50px;
+}
+
+.show {
+    background-color: ghostwhite;
 }

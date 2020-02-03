@@ -1,7 +1,7 @@
 let email = document.getElementById('inputEmail');
 let password = document.getElementById('inputPassword');
-let firstName = document.getElementById('firstname');
-let lastName = document.getElementById('lastname');
+let name = document.getElementById('name');
+let cellphone = document.getElementById('cellphone');
 let inputAddress = document.getElementsByClassName('inputAddress');
 let sw = document.getElementById('customSwitch1');
 let plate = document.getElementById('plate');
@@ -69,8 +69,8 @@ function validateInputs(){
 //objeto a enviar
 function sendObject() {
     User = {
-        firstname: firstName.value,
-        lastname: lastName.value,
+        name: name.value,
+        cellphone: cellphone.value,
         email: email.value,
         password: password.value,
         address: addresses,

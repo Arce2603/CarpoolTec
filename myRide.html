@@ -34,7 +34,7 @@
         <h1 class="text-center">My Rides</h1>
         <section>
             <h2>Pending rides</h2>
-            <ul class="list-group">
+            <!--<ul class="list-group">
                 <li class="list-group-item list-group-item-action">
                     <div class="media">
                         <div class="userImg">
@@ -43,7 +43,7 @@
                         <div class="media-body">
                             <div class="row">
                                 <div class="col-xs-6">
-                                    <div class="userName">Nombre del usuario</div>
+                                    <div class="userName">Nombre del usuario2</div>
                                     <div class="ride_share">Riding</div>
                                     <div class="date">DD/MM/AAA <span class="time"> HH:MM</span></div>
                                     <div class="departing">Departing from</div>
@@ -54,18 +54,19 @@
                                         <button class="btn btn-success"><i class="fas fa-edit"></i></button>
                                         <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
                                     </div>
-                                </div>                                
+                                </div>
                             </div>
-                            
                         </div>
                     </div>
                 </li>
-            </ul>
+            </ul>-->
+            <div class="accordion pending" id="accordionExample">
+            </div>
         </section>
         <hr class="featurette-divider">
         <section>
             <h2>Previous rides</h2>
-            <ul class="list-group">
+            <!--<ul class="list-group">
                 <li class="list-group-item list-group-item-action">
                     <div class="media">
                         <img src="./img/user.png" class="thmbnl" alt="profile-picture">
@@ -76,8 +77,68 @@
                         </div>
                     </div>
                 </li>
-            </ul>
+            </ul>-->
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <div class="media" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <img src="./img/user.png" class="thmbnl" alt="profile-picture">
+                            <div class="media-body">
+                                <div class="userName">Nombre del usuario</div>
+                                <div class="ride_share">Riding</div>
+                                <div class="date">DD/MM/AAA <span class="time"> HH:MM</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="cellphone"><span class="bold">Cellphone: </span>12-25-36-58-78</div>
+                            <div class="email"><span class="bold">Email: </span>a01196666@itesm.mx</div>
+                            <div class="carPlate"> <span class="bold">Plate: </span>RTS-98-56</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <div class="media" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <img src="./img/user.png" class="thmbnl" alt="profile-picture">
+                            <div class="media-body">
+                                <div class="userName">Nombre del usuario2</div>
+                                <div class="ride_share">Riding</div>
+                                <div class="date">DD/MM/AAA <span class="time"> HH:MM</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="cellphone"><span class="bold">Cellphone: </span>12-25-36-58-78</div>
+                            <div class="email"><span class="bold">Email: </span>a01196666@itesm.mx</div>
+                            <div class="carPlate"> <span class="bold">Plate: </span>RTS-98-56</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <div class="media" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <img src="./img/user.png" class="thmbnl" alt="profile-picture">
+                            <div class="media-body">
+                                <div class="userName">Nombre del usuario 3</div>
+                                <div class="ride_share">Riding</div>
+                                <div class="date">DD/MM/AAA <span class="time"> HH:MM</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="cellphone"><span class="bold">Cellphone: </span>12-25-36-58-78</div>
+                            <div class="email"><span class="bold">Email: </span>a01196666@itesm.mx</div>
+                            <div class="carPlate"> <span class="bold">Plate: </span>RTS-98-56</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <script type="text/javascript" src="./js/myRide.js"></script>
 </body>
 </html>
